@@ -19,5 +19,4 @@ public class BookSearch {
 	public void setMatch(String match) {
 		this.match = match;
 	}
-
 }
