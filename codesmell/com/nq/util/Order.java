@@ -36,7 +36,7 @@ public class Order {
         Iterator iter = lineItems.iterator();
         lineItem item;
         // set total to zero
-        int total = 0;
+        int t = 0;
             while (iter.hasNext()) {
                 item = (lineItem)iter.next();
 
@@ -45,7 +45,7 @@ public class Order {
                 int qty = item.getQuantity();
                 int lineitemtotal = unitPrice * qty;
 
-                total += lineitemtotal;
+                t += lineitemtotal;
             }
         // ------------------------------------------------------
         // END calculate total
@@ -73,7 +73,7 @@ public class Order {
                 pw.println("Total = " + lineitemtotal);
                 pw.println("End Line Item");
             }
-        pw.println("Order total = " + total);
+        pw.println("Order total = " + t);
     }
 
     public int getTotal() {

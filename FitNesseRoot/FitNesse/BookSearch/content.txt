@@ -1,0 +1,18 @@
+<test page>
+
+!define TEST_SYSTEM {slim}
+
+!path target/classes
+#!path target/test-classes
+
+|import|
+|com.wsobs|
+
+!|BookSearch|
+|criteria|match?|
+|Good Omens|Good Omens|
+|Snuff|Not found|
+|*the*|[The Best of Times]|
+|*world*|[World According to Garp, Around the World in Eight Days]|
+|*snickity*|Not found|
+
